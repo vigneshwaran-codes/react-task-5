@@ -1,38 +1,148 @@
 .App {
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.blog-card{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.card-btn{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.card-container{
+  margin: 6px;
+  cursor:grab;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container:hover{
+  box-shadow:rgba(0,0,0,0.35) 0px 5px 15px; 
+}
+
+.post-btn{
+  margin: 1rem;
+  margin-left: 56rem;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-action-btn{
+  margin:1rem;
+}
+
+.about-action-btn:hover{
+  background-color: #fff;
+  color: #111111;
+}
+
+.bio{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 18rem;
+}
+.about-app{
+margin-top: 8rem;
+margin-bottom: 2rem;
+}
+.blog-page{
+  margin-bottom: "420px";
+  text-align: left;
+}
+
+.blog-img{
+  width: 36%;
+  margin-left: 55rem;
+  position: absolute;
+}
+
+.dev-img{
+  width: 40%;
+}
+
+.posts-img{
+  width: 24%;
+  margin-bottom: 18px;
+}
+
+.add_post-img{
+  width: 20%;
+  margin: 2rem;
+}
+
+textarea{
+  resize: none;
+}
+
+.update_post_txt{
+  margin: 8rem;
+}
+
+.blog-btn{
+  margin: 20px 38px 10px;
+  position: relative;
+
+}
+
+.blog-table{
+  border: 2px solid #000;
+  margin-top: 12px;
+}
+
+.blog-intro{
+  margin: 20px 38px 10px;
+}
+
+.view-btn{
+  font-size: 18px;
+  color: black;
+}
+.del-btn{
+  font-size: 18px;
+  color: red;
+}
+
+.user-heading{
+  margin: 4rem;
+}
+
+.post-heading{
+  margin: 4rem;
+}
+
+.profile-sidebar{
+  width: 320px;
+  margin: 5rem;
+}
+
+.profile-info{
+  margin: 4px;
+  color: #161616;
+}
+
+.profile-info p{
+  background-color: rgb(216, 216, 216);
+  margin: 12px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.profile-info-card{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
 }
